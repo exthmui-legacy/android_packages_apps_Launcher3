@@ -88,6 +88,8 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
     public static final float PULL_MULTIPLIER = .02f;
     public static final float FLING_VELOCITY_MULTIPLIER = 1200f;
 
+    private final Paint mHeaderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     protected final BaseDraggingActivity mLauncher;
     protected final AdapterHolder[] mAH;
     private final ItemInfoMatcher mPersonalMatcher = ItemInfoMatcher.ofUser(Process.myUserHandle());
